@@ -20,7 +20,7 @@ namespace CordiSimple.Models
         [Required, StringLength(20)]
         public string Password { get; set; }
 
-        public UserRole MyProperty { get; set; } = UserRole.USER;
+        public UserRole Role { get; set; } = UserRole.USER;
         
         public List<Booking> Bookings { get; set; }
 
