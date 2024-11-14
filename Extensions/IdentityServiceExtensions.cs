@@ -14,7 +14,7 @@ namespace CordiSimple.Extensions
         {
             //Get the token key from the environment variables
             var tokenKey = Environment.GetEnvironmentVariable("TOKEN_KEY")
-                            ?? throw new Exception("TOKEN_KEY noy found");
+                            ?? throw new Exception("TOKEN_KEY not found");
 
             //Add JWT Authentication
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

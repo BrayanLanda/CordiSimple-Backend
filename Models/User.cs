@@ -17,10 +17,10 @@ namespace CordiSimple.Models
         [Required, EmailAddress, StringLength(100)]
         public string Email { get; set; }
 
-        [Required, StringLength(20)]
+        [Required, StringLength(255)]
         public string Password { get; set; }
 
-        public UserRole Role { get; set; } = UserRole.USER;
+        public UserRole Role { get; set; }
         
         public List<Booking> Bookings { get; set; }
 

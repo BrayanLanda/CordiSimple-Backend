@@ -38,7 +38,7 @@ namespace CordiSimple.Services
                 Name = userRegisterDto.Name,
                 Email = userRegisterDto.Email,
                 Password = _passwordHasher.HashPassword(null, userRegisterDto.Password),
-                Role = Enum.Parse<UserRole>(userRegisterDto.Role, true)
+                Role = UserRole.USER
             };
 
             //Save user
